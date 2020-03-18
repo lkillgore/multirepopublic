@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more: 
+# https://aka.ms/yaml
+
+resources:
+  repositories:
+  - repository: "lkillgore/multirepoprivate"
+    type: github
+    endpoint: "foo"
+    name: lkillgore/multirepoprivate
+    
+trigger:
+- master
+
+pool: 'Default'
+  
+steps:
+- checkout: self
+- checkout: lkillgore/multirepoprivate
+
+- script: dir $(Build.SourcesDirectory)
