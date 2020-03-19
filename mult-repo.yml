@@ -5,7 +5,7 @@
 
 resources:
   repositories:
-  - repository: "lkillgore/multirepoprivate"
+  - repository: "multirepoprivate"
     type: github
     endpoint: "lkillgore"
     name: lkillgore/multirepoprivate
@@ -17,6 +17,6 @@ pool: 'Default'
   
 steps:
 - checkout: self
-- checkout: lkillgore/multirepoprivate
+- checkout: multirepoprivate
 
 - script: dir $(Build.SourcesDirectory)
