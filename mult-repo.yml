@@ -7,7 +7,7 @@ resources:
   repositories:
   - repository: "multirepoprivate"
     type: github
-    endpoint: "lkillgore (1)"
+    endpoint: "lkillgore"
     name: lkillgore/multirepoprivate
     
 trigger:
