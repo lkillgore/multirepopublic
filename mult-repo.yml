@@ -9,6 +9,14 @@ resources:
     type: github
     endpoint: "test"
     name: lkillgore/multirepoprivate
+  - repository: "bitbucket_public"
+    type: bitbucket
+    endpoint: "Bitbucket - lkillgore"
+    name: "lkillgore/mypublicrepo"
+  - repository: "bitbucket_private"
+    type: bitbucket
+    endpoint: "Bitbucket - lkillgore"
+    name: "lkillgore/test2"
     
 trigger:
 - master
