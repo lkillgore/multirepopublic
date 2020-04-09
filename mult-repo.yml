@@ -26,5 +26,7 @@ pool: 'Default'
 steps:
 - checkout: self
 - checkout: multirepoprivate
+- checkout: bitbucket_public
+- checkout: bitbucket_private
 
 - script: dir $(Build.SourcesDirectory)
