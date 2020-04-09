@@ -9,14 +9,26 @@ resources:
     type: github
     endpoint: "test"
     name: lkillgore/multirepoprivate
+    trigger:
+      batch: true
+      branches:
+      - master
   - repository: "bitbucket_public"
     type: bitbucket
     endpoint: "Bitbucket - lkillgore"
     name: "lkillgore/mypublicrepo"
+    trigger:
+      batch: true
+      branches:
+      - master
   - repository: "bitbucket_private"
     type: bitbucket
     endpoint: "Bitbucket - lkillgore"
     name: "lkillgore/test2"
+    trigger:
+      batch: true
+      branches:
+      - master
     
 trigger:
 - master
